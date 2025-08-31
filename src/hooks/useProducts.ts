@@ -14,6 +14,7 @@ const useProducts=({ page, limit, query }: UseProductsParams)=> {
           )}`
         : `/products?limit=${limit}&skip=${skip}`;
       const { data } = await api.get<ProductsResponse>(url);
+      console.table(data)
       return data;
     },
     placeholderData: keepPreviousData,

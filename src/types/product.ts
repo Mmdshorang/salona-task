@@ -1,9 +1,8 @@
-// src/types/product.ts
 
 export type ProductReview = {
   rating: number;
   comment: string;
-  date: string; // ISO string
+  date: string; 
   reviewerName: string;
   reviewerEmail: string;
 };
@@ -15,10 +14,10 @@ export type ProductDimensions = {
 };
 
 export type ProductMeta = {
-  createdAt: string; // ISO string
-  updatedAt: string; // ISO string
+  createdAt: string; 
+  updatedAt: string; 
   barcode: string;
-  qrCode: string; // URL
+  qrCode: string; 
 };
 
 export type Product = {
@@ -58,7 +57,7 @@ export type ProductsResponse = {
   limit: number;
 };
 export type UseProductsParams = {
-  page: number; // 1-based
-  limit: number; // items per page
-  query: string; // search term
+  page: number; 
+  limit: number;
+  query: string; 
 };
